@@ -2,6 +2,9 @@
 
 S3method(print,typed)
 export("?")
+export(NumVec)
 export(assert_types)
 export(const)
+importFrom(Rcpp,sourceCpp)
 importFrom(utils,help)
+useDynLib(typed, .registration = TRUE)
